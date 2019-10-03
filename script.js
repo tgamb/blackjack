@@ -86,11 +86,13 @@ function dealHandTwo() {
 }
 
 document.getElementById("startGame").addEventListener("click", function() {
-
+    shuffle(deck); 
+    dealHandOne(); 
+    dealHandTwo(); 
 })
 
 document.getElementById("hitMe").addEventListener("click", function() {
-    
+
 })
 
 document.getElementById("stay").addEventListener("click", function() {
