@@ -1,4 +1,4 @@
-// Lines 3-21 construct the deck of cards. 
+// This array represents a deck of cards 
 let deck = [
     {value: "A", suit: "spades", pointValue: 11},
     {value: "A", suit: "diamonds", pointValue: 11},
@@ -54,22 +54,33 @@ let deck = [
     {value: "K", suit: "hearts", pointValue: 10}
 ]
 
-// Lines 23-26 shuffle the deck of cards 
+let playerOneHand = []
+let playerTwoHand = []
+let topCard = null
+
+// This function shuffles the deck 
 function shuffle(array) {
     array.sort(() => Math.random() - 0.5)
     return deck
 }
 
+// This function draws the top card of the deck
 function drawCards(deck) {
-    let topCard = deck.pop()
-    return topCard
+    topCard = deck.pop()
 }
 
-function dealHand() {
-    for(let i = 0; i < 2; i++) {
-        for(let j = 0; j < newPlayers.length; j++) {
-            drawCards(deck)
-        }
+// This function will deal a starting hand to player one 
+function dealHandOne() {
+    for(i = 0; i < 2; i++) {
+        drawCards(deck)
+        playerOneHand.push(topCard)
     }
 }
 
+// This function will deal a starting hand to player two 
+function dealHandTwo() {
+    for(i = 0; i < 2; i++) {
+        drawCards(deck)
+        playerTwoHand.push(topCard)
+    }
+}
