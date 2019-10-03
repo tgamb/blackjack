@@ -54,13 +54,15 @@ let deck = [
     {value: "K", suit: "hearts", pointValue: 10}
 ]
 
+// Global variables 
 let players = [
     {id: playerOne, isActive: true},
     {id: playerTwo, isActive: false}
 ]
-
 let playerOneHand = []
 let playerTwoHand = []
+let playerOnePoints = 0 
+let playerTwoPoints = 0
 let topCard = null
 
 // This function shuffles the deck 
@@ -90,13 +92,24 @@ function dealHandTwo() {
     }
 }
 
-
+// Logic for Start Game button 
 document.getElementById("startGame").addEventListener("click", function() {
     shuffle(deck); 
     dealHandOne(); 
     dealHandTwo(); 
 })
 
+// Logic for calculating scores
+function calculateScores() {
+    for(let i = 0; i < playerOneHand.length; i++) {
+        playerOnePoints = playerOnePoints + playerOneHand[i].pointValue
+    }
+    for(let j = 0; j < playerTwoHand.length; j++) {
+        playerTwoPoints = playerTwoPoints + playerTwoHand[j].pointValue
+    }
+}
+
+// Logic for Hit Me button 
 document.getElementById("hitMe").addEventListener("click", function() {
     if (players[0].isActive === true) {
         drawCards(deck)
@@ -108,6 +121,7 @@ document.getElementById("hitMe").addEventListener("click", function() {
     }
 })
 
+// Logic for Stay button 
 document.getElementById("stay").addEventListener("click", function() {
     if (players[0].isActive === true) {
         players[0].isActive = false 
