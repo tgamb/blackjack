@@ -38,3 +38,7 @@ function createPlayers(num) {
     }
 }
 
+function drawCards(deck) {
+    return deck.pop()
+}
+
