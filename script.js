@@ -55,8 +55,8 @@ let deck = [
 ]
 
 let players = [
-    {id: playerOne, isActive: false},
-    {id: playerTwo, isActive: true}
+    {id: playerOne, isActive: true},
+    {id: playerTwo, isActive: false}
 ]
 
 let playerOneHand = []
@@ -90,6 +90,7 @@ function dealHandTwo() {
     }
 }
 
+
 document.getElementById("startGame").addEventListener("click", function() {
     shuffle(deck); 
     dealHandOne(); 
@@ -108,5 +109,11 @@ document.getElementById("hitMe").addEventListener("click", function() {
 })
 
 document.getElementById("stay").addEventListener("click", function() {
-    
+    if (players[0].isActive === true) {
+        players[0].isActive = false 
+        players[1].isActive = true
+    }
+    else if (players[1] === true) {
+        calculateScores()
+    }
 })
