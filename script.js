@@ -54,6 +54,11 @@ let deck = [
     {value: "K", suit: "hearts", pointValue: 10}
 ]
 
+let players = [
+    {id: playerOne, isActive: false},
+    {id: playerTwo, isActive: true}
+]
+
 let playerOneHand = []
 let playerTwoHand = []
 let topCard = null
@@ -92,7 +97,14 @@ document.getElementById("startGame").addEventListener("click", function() {
 })
 
 document.getElementById("hitMe").addEventListener("click", function() {
-
+    if (players[0].isActive === true) {
+        drawCards(deck)
+        playerOneHand.push(topCard)
+    }
+    else if(players[1].isActive === true) {
+        drawCards(deck)
+        playerTwoHand.push(topCard)
+    }
 })
 
 document.getElementById("stay").addEventListener("click", function() {
