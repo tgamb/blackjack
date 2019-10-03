@@ -37,3 +37,4 @@ function createPlayers(num) {
         newPlayers.push(player)
     }
 }
+
