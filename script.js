@@ -6,14 +6,19 @@ function buildDeck() {
     deck = new Array() 
 
     for(let i = 0; i < faceValues.length; i++) {
-        for(let i = 0; i < suits.length; i++) {
-            let cardValue = parseInt(values[i])
+        for(let j = 0; j < suits.length; j++) {
+            let cardValue = parseInt(faceValues[i])
             if (faceValues[i] === 'J' || faceValues[i] === 'Q' || faceValues[i] === 'K')
                 cardValue = 10
             if (faceValues[i] === 'A')
                 cardValue = 11
-            var card = {value: cardValue[i], suit: suits[i], pointValue: cardValue}
+            var card = {value: faceValues[i], suit: suits[j], pointValue: cardValue}
             deck.push(card)
         }
     }
+}
+
+function shuffle(array) {
+    array.sort(() => Math.random() - 0.5)
+    return deck
 }
