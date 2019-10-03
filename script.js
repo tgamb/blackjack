@@ -84,3 +84,15 @@ function dealHandTwo() {
         playerTwoHand.push(topCard)
     }
 }
+
+document.getElementById("startGame").addEventListener("click", function() {
+
+})
+
+document.getElementById("hitMe").addEventListener("click", function() {
+    
+})
+
+document.getElementById("stay").addEventListener("click", function() {
+    
+})
