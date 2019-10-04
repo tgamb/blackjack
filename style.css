@@ -1,12 +1,14 @@
 #gameboard {
+    /* display: flex; */
     height: 600px;  
     width: 600px; 
     background: green; 
 }
 
-#options {
+#buttons {
     display: flex; 
     justify-content: center; 
+    align-items: center; 
     padding: 40px; 
 }
 
@@ -17,6 +19,9 @@
 }
 
 #deck {
+    display: flex; 
+    justify-content: center;
+    padding-left: 40px; 
     height: 100px; 
     width: 75px; 
 }
@@ -24,11 +29,75 @@
 #players {
     height: 200px; 
     display: flex; 
-    justify-content: center; 
+    justify-content: space-around; 
+    align-items: center;  
     padding: 30px; 
 }
 
+#playerOne {
+    text-align: center; 
+    padding: 
+}
+
+#playerOneHand {
+    display: flex; 
+    flex-direction: row; 
+    margin: 20px; 
+}
+
+#playerTwo {
+    text-align: center; 
+}
+
+#playerTwoHand {
+    display: flex; 
+    flex-direction: row; 
+    margin: 20px; 
+}
+
 .card {
+    display: flex; 
+    justify-content: center; 
     height: 100px; 
     width: 75px; 
+}
+
+#buttons {
+    height: 40px; 
+    display: flex; 
+    align-items: center; 
+    width:  
+}
+
+#startGame {
+    color: white; 
+    background: lightgray; 
+    padding: 8px; 
+    border-radius: 25px; 
+    border: black solid 1px; 
+    height: 40px; 
+    width: 80px; 
+    margin: 10px; 
+}
+
+#hitMe {
+    color: white; 
+    background: lightgray; 
+    padding: 8px; 
+    border-radius: 25px; 
+    border: black solid 1px; 
+    height: 40px; 
+    width: 80px;
+    margin: 10px;
+}
+
+#stay {
+    color: white; 
+    background: lightgray; 
+    padding: 8px; 
+    border-radius: 25px; 
+    border: black solid 1px; 
+    height: 40px; 
+    width: 80px;
+    margin: 10px;
 }
