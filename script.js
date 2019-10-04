@@ -97,6 +97,7 @@ document.getElementById("startGame").addEventListener("click", function() {
     shuffle(deck); 
     dealHandOne(); 
     dealHandTwo(); 
+    calculateScores(); 
 })
 
 // Logic for calculating scores
@@ -114,10 +115,18 @@ document.getElementById("hitMe").addEventListener("click", function() {
     if (players[0].isActive === true) {
         drawCards(deck)
         playerOneHand.push(topCard)
+        calculateScores()
+        if(playerOnePoints > 21) {
+            alert("Player 2 Wins!")
+        }
     }
     else if(players[1].isActive === true) {
         drawCards(deck)
         playerTwoHand.push(topCard)
+        calculateScores()
+        if(playerTwoPoints > 21) {
+            alert("Player 1 Wins!")
+        }
     }
 })
 
@@ -128,6 +137,14 @@ document.getElementById("stay").addEventListener("click", function() {
         players[1].isActive = true
     }
     else if (players[1] === true) {
-        calculateScores()
     }
 })
+
+function whoWins() {
+    if(playerOnePoints > playerTwoPoints) {
+        alert("Player 1 Wins!")
+    }
+    else if(playerTwoPoints > playerOnePoints) {
+        alert("Player 2 Wins!")
+    }
+}
