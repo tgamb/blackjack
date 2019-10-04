@@ -149,6 +149,14 @@ function whoWins() {
     }
 }
 
-function renderCards() {
-    $('#playerOneHand').append(`<div>${playerOneHand[i].img}</div>`)
+function renderCardsPlayerOne() {
+    for(let i = 0; i < playerOneHand.length; i++) {
+    $('#playerOneHand').append(`<img src = ${playerOneHand[i].img}>`)
+    }
+}
+
+function renderCardsPlayerTwo() {
+    for(let i = 0; i < playerTwoHand.length; i++) {
+        $('#playerTwoHand').append(`<img src = ${playerTwoHand[i].img}>`)
+    }
 }
