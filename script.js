@@ -94,10 +94,12 @@ function dealHandTwo() {
 
 // Logic for Start Game button 
 document.getElementById("startGame").addEventListener("click", function() {
-    shuffle(deck); 
-    dealHandOne(); 
-    dealHandTwo(); 
-    calculateScores(); 
+    shuffle(deck) 
+    dealHandOne() 
+    dealHandTwo()
+    calculateScores()
+    renderCardsPlayerOne()
+    renderCardsPlayerTwo()
 })
 
 // Logic for calculating scores
@@ -116,6 +118,7 @@ document.getElementById("hitMe").addEventListener("click", function() {
         drawCards(deck)
         playerOneHand.push(topCard)
         calculateScores()
+        renderCardsPlayerOne()
         if(playerOnePoints > 21) {
             alert("Player 2 Wins!")
         }
@@ -124,6 +127,7 @@ document.getElementById("hitMe").addEventListener("click", function() {
         drawCards(deck)
         playerTwoHand.push(topCard)
         calculateScores()
+        renderCardsPlayerTwo()
         if(playerTwoPoints > 21) {
             alert("Player 1 Wins!")
         }
@@ -151,12 +155,12 @@ function whoWins() {
 
 function renderCardsPlayerOne() {
     for(let i = 0; i < playerOneHand.length; i++) {
-    $('#playerOneHand').append(`<img src = ${playerOneHand[i].img}>`)
+    $('#playerOneHand').append(`<img class = card src = ${playerOneHand[i].img}>`)
     }
 }
 
 function renderCardsPlayerTwo() {
     for(let i = 0; i < playerTwoHand.length; i++) {
-        $('#playerTwoHand').append(`<img src = ${playerTwoHand[i].img}>`)
+        $('#playerTwoHand').append(`<img class = card src = ${playerTwoHand[i].img}>`)
     }
 }
