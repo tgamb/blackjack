@@ -59,6 +59,7 @@ let players = [
     {id: playerOne, isActive: true},
     {id: playerTwo, isActive: false}
 ]
+
 let playerOneHand = []
 let playerTwoHand = []
 let playerOnePoints = 0 
@@ -67,18 +68,22 @@ let topCard = null
 
 // This function shuffles the deck 
 function shuffle(array) {
+
     array.sort(() => Math.random() - 0.5)
     return deck
 }
 
 // This function draws the top card of the deck
 function drawCards(deck) {
+
     topCard = deck.pop()
 }
 
 // This function will deal a starting hand to player one 
 function dealHandOne() {
+
     for(i = 0; i < 2; i++) {
+
         drawCards(deck)
         playerOneHand.push(topCard)
     }
@@ -86,7 +91,9 @@ function dealHandOne() {
 
 // This function will deal a starting hand to player two 
 function dealHandTwo() {
+
     for(i = 0; i < 2; i++) {
+
         drawCards(deck)
         playerTwoHand.push(topCard)
     }
@@ -94,6 +101,7 @@ function dealHandTwo() {
 
 // Logic for Start Game button 
 document.getElementById("startGame").addEventListener("click", function() {
+
     shuffle(deck) 
     dealHandOne() 
     dealHandTwo()
@@ -104,63 +112,89 @@ document.getElementById("startGame").addEventListener("click", function() {
 
 // Logic for calculating scores
 function calculateScores() {
+
     for(let i = 0; i < playerOneHand.length; i++) {
+
         playerOnePoints = playerOnePoints + playerOneHand[i].pointValue
     }
+
     for(let j = 0; j < playerTwoHand.length; j++) {
+
         playerTwoPoints = playerTwoPoints + playerTwoHand[j].pointValue
     }
 }
 
 // Logic for Hit Me button 
 document.getElementById("hitMe").addEventListener("click", function() {
+
     if (players[0].isActive === true) {
+
         drawCards(deck)
         playerOneHand.push(topCard)
-        calculateScores()
-        renderCardsPlayerOne()
-        if(playerOnePoints > 21) {
-            alert("Player 2 Wins!")
+        $('#playerOneHand').append(`<img class = card src = ${topCard.img}>`)
+        playerOnePoints = playerOnePoints + topCard.pointValue 
+
+    if(playerOnePoints > 21) {
+
+        alert("Player 2 Wins!")
+
         }
     }
+
     else if(players[1].isActive === true) {
+
         drawCards(deck)
         playerTwoHand.push(topCard)
-        calculateScores()
-        renderCardsPlayerTwo()
-        if(playerTwoPoints > 21) {
-            alert("Player 1 Wins!")
+        $('#playerTwoHand').append(`<img class = card src = ${topCard.img}>`)
+        playerTwoPoints = playerTwoPoints + topCard.pointValue
+
+    if(playerTwoPoints > 21) {
+
+        alert("Player 1 Wins!")
         }
     }
 })
 
 // Logic for Stay button 
 document.getElementById("stay").addEventListener("click", function() {
+
     if (players[0].isActive === true) {
+
         players[0].isActive = false 
         players[1].isActive = true
     }
-    else if (players[1] === true) {
+
+    else if (players[1].isActive === true) {
+
+        whoWins()
     }
 })
 
 function whoWins() {
+
     if(playerOnePoints > playerTwoPoints) {
+
         alert("Player 1 Wins!")
     }
+
     else if(playerTwoPoints > playerOnePoints) {
+
         alert("Player 2 Wins!")
     }
 }
 
 function renderCardsPlayerOne() {
+
     for(let i = 0; i < playerOneHand.length; i++) {
+
     $('#playerOneHand').append(`<img class = card src = ${playerOneHand[i].img}>`)
     }
 }
 
 function renderCardsPlayerTwo() {
+
     for(let i = 0; i < playerTwoHand.length; i++) {
+
         $('#playerTwoHand').append(`<img class = card src = ${playerTwoHand[i].img}>`)
     }
 }
