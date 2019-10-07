@@ -62,6 +62,16 @@
     margin: 20px; 
 }
 
+#playerOnePoints {
+    font-family: Times; 
+    font-size: 20px; 
+}
+
+#playerTwoPoints {
+    font-family: Times; 
+    font-size: 20px; 
+}
+
 #playerTwo {
     text-align: center; 
 }
