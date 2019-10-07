@@ -1,57 +1,57 @@
 // This array represents a deck of cards 
 let deck = [
-    { value: "A", suit: "spades", pointValue: 11, img: "images.3/ace_of_spades.svg", },
-    { value: "A", suit: "diamonds", pointValue: 11, img: "images.3/ace_of_diamonds.svg" },
-    { value: "A", suit: "clubs", pointValue: 11, img: "images.3/ace_of_clubs.svg" },
-    { value: "A", suit: "hearts", pointValue: 11, img: "images.3/ace_of_hearts.svg" },
-    { value: "2", suit: "spades", pointValue: 2, img: "images.3/2_of_spades.svg" },
-    { value: "2", suit: "diamonds", pointValue: 2, img: "images.3/2_of_diamonds.svg" },
-    { value: "2", suit: "clubs", pointValue: 2, img: "images.3/2_of_clubs.svg" },
-    { value: "2", suit: "hearts", pointValue: 2, img: "images.3/2_of_hearts.svg" },
-    { value: "3", suit: "spades", pointValue: 3, img: "images.3/3_of_spades.svg" },
-    { value: "3", suit: "diamonds", pointValue: 3, img: "images.3/3_of_diamonds.svg" },
-    { value: "3", suit: "clubs", pointValue: 3, img: "images.3/3_of_clubs.svg" },
-    { value: "3", suit: "hearts", pointValue: 3, img: "images.3/3_of_hearts.svg" },
-    { value: "4", suit: "spades", pointValue: 4, img: "images.3/4_of_spades.svg" },
-    { value: "4", suit: "diamonds", pointValue: 4, img: "images.3/4_of_diamonds.svg" },
-    { value: "4", suit: "clubs", pointValue: 4, img: "images.3/4_of_clubs.svg" },
-    { value: "4", suit: "hearts", pointValue: 4, img: "images.3/4_of_hearts.svg" },
-    { value: "5", suit: "spades", pointValue: 5, img: "images.3/5_of_spades.svg" },
-    { value: "5", suit: "diamonds", pointValue: 5, img: "images.3/5_of_diamonds.svg" },
-    { value: "5", suit: "clubs", pointValue: 5, img: "images.3/5_of_clubs.svg" },
-    { value: "5", suit: "hearts", pointValue: 5, img: "images.3/5_of_hearts.svg" },
-    { value: "6", suit: "spades", pointValue: 6, img: "images.3/6_of_spades.svg" },
-    { value: "6", suit: "diamonds", pointValue: 6, img: "images.3/6_of_diamonds.svg" },
-    { value: "6", suit: "clubs", pointValue: 6, img: "images.3/6_of_clubs.svg" },
-    { value: "6", suit: "hearts", pointValue: 6, img: "images.3/6_of_hearts.svg" },
-    { value: "7", suit: "spades", pointValue: 7, img: "images.3/7_of_spades.svg" },
-    { value: "7", suit: "diamonds", pointValue: 7, img: "images.3/7_of_diamonds.svg" },
-    { value: "7", suit: "clubs", pointValue: 7, img: "images.3/7_of_clubs.svg" },
-    { value: "7", suit: "hearts", pointValue: 7, img: "images.3/7_of_hearts.svg" },
-    { value: "8", suit: "spades", pointValue: 8, img: "images.3/8_of_spades.svg" },
-    { value: "8", suit: "diamonds", pointValue: 8, img: "images.3/8_of_diamonds.svg" },
-    { value: "8", suit: "clubs", pointValue: 8, img: "images.3/8_of_clubs.svg" },
-    { value: "8", suit: "hearts", pointValue: 8, img: "images.3/8_of_hearts.svg" },
-    { value: "9", suit: "spades", pointValue: 9, img: "images.3/9_of_spades.svg" },
-    { value: "9", suit: "diamonds", pointValue: 9, img: "images.3/9_of_diamonds.svg" },
-    { value: "9", suit: "clubs", pointValue: 9, img: "images.3/9_of_clubs.svg" },
-    { value: "9", suit: "hearts", pointValue: 9, img: "images.3/9_of_hearts.svg" },
-    { value: "10", suit: "spades", pointValue: 10, img: "images.3/10_of_spades.svg" },
-    { value: "10", suit: "diamonds", pointValue: 10, img: "images.3/10_of_diamonds.svg" },
-    { value: "10", suit: "clubs", pointValue: 10, img: "images.3/10_of_clubs.svg" },
-    { value: "10", suit: "hearts", pointValue: 10, img: "images.3/10_of_hearts.svg" },
-    { value: "J", suit: "spades", pointValue: 10, img: "images.3/jack_of_spades.svg" },
-    { value: "J", suit: "diamonds", pointValue: 10, img: "images.3/jack_of_diamonds.svg" },
-    { value: "J", suit: "clubs", pointValue: 10, img: "images.3/jack_of_clubs.svg" },
-    { value: "J", suit: "hearts", pointValue: 10, img: "images.3/jack_of_hearts.svg" },
-    { value: "Q", suit: "spades", pointValue: 10, img: "images.3/queen_of_spades.svg" },
-    { value: "Q", suit: "diamonds", pointValue: 10, img: "images.3/queen_of_diamonds.svg" },
-    { value: "Q", suit: "clubs", pointValue: 10, img: "images.3/queen_of_clubs.svg" },
-    { value: "Q", suit: "hearts", pointValue: 10, img: "images.3/queen_of_hearts.svg" },
-    { value: "K", suit: "spades", pointValue: 10, img: "images.3/king_of_spades.svg" },
-    { value: "K", suit: "diamonds", pointValue: 10, img: "images.3/king_of_diamonds.svg" },
-    { value: "K", suit: "clubs", pointValue: 10, img: "images.3/king_of_clubs.svg" },
-    { value: "K", suit: "hearts", pointValue: 10, img: "images.3/king_of_hearts.svg" }
+    { value: "A", suit: "spades", pointValue: 11, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/ace_of_spades.svg" },
+    { value: "A", suit: "diamonds", pointValue: 11, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/ace_of_diamonds.svg" },
+    { value: "A", suit: "clubs", pointValue: 11, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/ace_of_clubs.svg" },
+    { value: "A", suit: "hearts", pointValue: 11, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/ace_of_hearts.svg" },
+    { value: "2", suit: "spades", pointValue: 2, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/2_of_spades.svg" },
+    { value: "2", suit: "diamonds", pointValue: 2, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/2_of_diamonds.svg" },
+    { value: "2", suit: "clubs", pointValue: 2, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/2_of_clubs.svg" },
+    { value: "2", suit: "hearts", pointValue: 2, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/2_of_hearts.svg" },
+    { value: "3", suit: "spades", pointValue: 3, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/3_of_spades.svg" },
+    { value: "3", suit: "diamonds", pointValue: 3, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/3_of_diamonds.svg" },
+    { value: "3", suit: "clubs", pointValue: 3, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/3_of_clubs.svg" },
+    { value: "3", suit: "hearts", pointValue: 3, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/3_of_hearts.svg" },
+    { value: "4", suit: "spades", pointValue: 4, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/4_of_spades.svg" },
+    { value: "4", suit: "diamonds", pointValue: 4, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/4_of_diamonds.svg" },
+    { value: "4", suit: "clubs", pointValue: 4, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/4_of_clubs.svg" },
+    { value: "4", suit: "hearts", pointValue: 4, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/4_of_hearts.svg" },
+    { value: "5", suit: "spades", pointValue: 5, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/5_of_spades.svg" },
+    { value: "5", suit: "diamonds", pointValue: 5, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/5_of_diamonds.svg" },
+    { value: "5", suit: "clubs", pointValue: 5, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/5_of_clubs.svg" },
+    { value: "5", suit: "hearts", pointValue: 5, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/5_of_hearts.svg" },
+    { value: "6", suit: "spades", pointValue: 6, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/6_of_spades.svg" },
+    { value: "6", suit: "diamonds", pointValue: 6, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/6_of_diamonds.svg" },
+    { value: "6", suit: "clubs", pointValue: 6, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/6_of_clubs.svg" },
+    { value: "6", suit: "hearts", pointValue: 6, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/6_of_hearts.svg" },
+    { value: "7", suit: "spades", pointValue: 7, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/7_of_spades.svg" },
+    { value: "7", suit: "diamonds", pointValue: 7, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/7_of_diamonds.svg" },
+    { value: "7", suit: "clubs", pointValue: 7, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/7_of_clubs.svg" },
+    { value: "7", suit: "hearts", pointValue: 7, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/7_of_hearts.svg" },
+    { value: "8", suit: "spades", pointValue: 8, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/8_of_spades.svg" },
+    { value: "8", suit: "diamonds", pointValue: 8, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/8_of_diamonds.svg" },
+    { value: "8", suit: "clubs", pointValue: 8, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/8_of_clubs.svg" },
+    { value: "8", suit: "hearts", pointValue: 8, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/8_of_hearts.svg" },
+    { value: "9", suit: "spades", pointValue: 9, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/9_of_spades.svg" },
+    { value: "9", suit: "diamonds", pointValue: 9, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/9_of_diamonds.svg" },
+    { value: "9", suit: "clubs", pointValue: 9, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/9_of_clubs.svg" },
+    { value: "9", suit: "hearts", pointValue: 9, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/9_of_hearts.svg" },
+    { value: "10", suit: "spades", pointValue: 10, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/10_of_spades.svg" },
+    { value: "10", suit: "diamonds", pointValue: 10, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/10_of_diamonds.svg" },
+    { value: "10", suit: "clubs", pointValue: 10, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/10_of_clubs.svg" },
+    { value: "10", suit: "hearts", pointValue: 10, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/10_of_hearts.svg" },
+    { value: "J", suit: "spades", pointValue: 10, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/jack_of_spades.svg" },
+    { value: "J", suit: "diamonds", pointValue: 10, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/jack_of_diamonds.svg" },
+    { value: "J", suit: "clubs", pointValue: 10, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/jack_of_clubs.svg" },
+    { value: "J", suit: "hearts", pointValue: 10, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/jack_of_hearts.svg" },
+    { value: "Q", suit: "spades", pointValue: 10, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/queen_of_spades.svg" },
+    { value: "Q", suit: "diamonds", pointValue: 10, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/queen_of_diamonds.svg" },
+    { value: "Q", suit: "clubs", pointValue: 10, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/queen_of_clubs.svg" },
+    { value: "Q", suit: "hearts", pointValue: 10, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/queen_of_hearts.svg" },
+    { value: "K", suit: "spades", pointValue: 10, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/king_of_spades.svg" },
+    { value: "K", suit: "diamonds", pointValue: 10, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/king_of_diamonds.svg" },
+    { value: "K", suit: "clubs", pointValue: 10, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/king_of_clubs.svg" },
+    { value: "K", suit: "hearts", pointValue: 10, img: "https://raw.git.generalassemb.ly/thomasgamble/blackjack-project/master/Images.3/king_of_hearts.svg" }
 ]
 
 // Global variables 
@@ -155,7 +155,7 @@ document.getElementById("hitMe").addEventListener("click", function () {
 
             drawCards(deck)
             playerOneHand.push(topCard)
-            $('#playerOneHand').append(`<img class = card src = ${topCard.img}>`)
+            $('#playerOneHand').append(`<img class="card" data="${topCard.img}?sanitize=true" type="image/svg+xml">`)
             playerOnePoints = playerOnePoints + topCard.pointValue
 
             if (playerOnePoints > 21) {
@@ -169,7 +169,7 @@ document.getElementById("hitMe").addEventListener("click", function () {
 
             drawCards(deck)
             playerTwoHand.push(topCard)
-            $('#playerTwoHand').append(`<img class = card src = ${topCard.img}>`)
+            $('#playerTwoHand').append(`<img class="card" data="${topCard.img}?sanitize=true" type="image/svg+xml">`)
             playerTwoPoints = playerTwoPoints + topCard.pointValue
 
             if (playerTwoPoints > 21) {
@@ -221,7 +221,7 @@ function renderCardsPlayerOne() {
 
     for (let i = 0; i < playerOneHand.length; i++) {
 
-        $('#playerOneHand').append(`<img class = card src = ${playerOneHand[i].img}>`)
+        $('#playerOneHand').append(`<img class="card" src="${playerOneHand[i].img}?sanitize=true" type="image/svg+xml">`)
     }
 }
 
@@ -229,6 +229,6 @@ function renderCardsPlayerTwo() {
 
     for (let i = 0; i < playerTwoHand.length; i++) {
 
-        $('#playerTwoHand').append(`<img class = card src = ${playerTwoHand[i].img}>`)
+        $('#playerTwoHand').append(`<img class="card" src="${playerTwoHand[i].img}?sanitize=true" type="image/svg+xml">`)
     }
 }
