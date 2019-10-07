@@ -155,7 +155,7 @@ document.getElementById("hitMe").addEventListener("click", function () {
 
             drawCards(deck)
             playerOneHand.push(topCard)
-            $('#playerOneHand').append(`<img class="card" data="${topCard.img}?sanitize=true" type="image/svg+xml">`)
+            $('#playerOneHand').append(`<img class="card" src="${topCard.img}?sanitize=true" type="image/svg+xml">`)
             playerOnePoints = playerOnePoints + topCard.pointValue
 
             if (playerOnePoints > 21) {
@@ -169,7 +169,7 @@ document.getElementById("hitMe").addEventListener("click", function () {
 
             drawCards(deck)
             playerTwoHand.push(topCard)
-            $('#playerTwoHand').append(`<img class="card" data="${topCard.img}?sanitize=true" type="image/svg+xml">`)
+            $('#playerTwoHand').append(`<img class="card" src="${topCard.img}?sanitize=true" type="image/svg+xml">`)
             playerTwoPoints = playerTwoPoints + topCard.pointValue
 
             if (playerTwoPoints > 21) {
