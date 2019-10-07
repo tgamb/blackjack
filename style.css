@@ -46,6 +46,11 @@
     text-align: center; 
 }
 
+#name {
+    font-family: Times; 
+    font-size: 25px; 
+}
+
 .active {
     border: black solid 2px; 
     border-radius: 5px; 
@@ -85,6 +90,17 @@
     margin: 10px; 
 }
 
+#startGame:hover {
+    color: black; 
+    background: lightgray; 
+    padding: 8px; 
+    border-radius: 25px; 
+    border: black solid 1px; 
+    height: 40px; 
+    width: 80px; 
+    margin: 10px; 
+}
+
 #hitMe {
     color: white; 
     background: lightgray; 
@@ -96,8 +112,30 @@
     margin: 10px;
 }
 
+#hitMe:hover {
+    color: black; 
+    background: lightgray; 
+    padding: 8px; 
+    border-radius: 25px; 
+    border: black solid 1px; 
+    height: 40px; 
+    width: 80px;
+    margin: 10px;
+}
+
 #stay {
     color: white; 
+    background: lightgray; 
+    padding: 8px; 
+    border-radius: 25px; 
+    border: black solid 1px; 
+    height: 40px; 
+    width: 80px;
+    margin: 10px;
+}
+
+#stay:hover {
+    color: black; 
     background: lightgray; 
     padding: 8px; 
     border-radius: 25px; 
