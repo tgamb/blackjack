@@ -108,9 +108,10 @@ document.getElementById("startGame").addEventListener("click", function() {
     calculateScores()
     renderCardsPlayerOne()
     renderCardsPlayerTwo()
+    displayScores()
 })
 
-// Logic for calculating scores
+// Logic for calculating scores. 
 function calculateScores() {
 
     for(let i = 0; i < playerOneHand.length; i++) {
@@ -122,6 +123,11 @@ function calculateScores() {
 
         playerTwoPoints = playerTwoPoints + playerTwoHand[j].pointValue
     }
+}
+
+function displayScores() {
+    document.getElementById('playerOnePoints').innerHTML = playerOnePoints
+    document.getElementById('playerTwoPoints').innerHTML = playerTwoPoints
 }
 
 // Logic for Hit Me button 
@@ -153,6 +159,7 @@ document.getElementById("hitMe").addEventListener("click", function() {
         alert("Player 1 Wins!")
         }
     }
+    displayScores()
 })
 
 // Logic for Stay button 
@@ -180,6 +187,10 @@ function whoWins() {
     else if(playerTwoPoints > playerOnePoints) {
 
         alert("Player 2 Wins!")
+    }
+
+    else if(playerTwoPoints === playerOnePoints) {
+        alert("It's a tie!")
     }
 }
 
