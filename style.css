@@ -1,15 +1,22 @@
 #gameboard {
     /* display: flex; */
     height: 600px;  
-    width: 600px; 
+    width: 1000px; 
     background: green; 
+}
+
+#header {
+    display: flex; 
+    justify-content: center; 
+    padding: 30px;
+    margin: 0px;  
 }
 
 #buttons {
     display: flex; 
     justify-content: center; 
     align-items: center; 
-    padding: 40px; 
+    padding: 25px; 
     height: 40px; 
 }
 
@@ -23,8 +30,8 @@
     display: flex; 
     justify-content: center;
     padding-left: 40px; 
-    height: 100px; 
-    width: 75px; 
+    height: 125px; 
+    width: 100px; 
 }
 
 #players {
@@ -37,6 +44,11 @@
 
 #playerOne {
     text-align: center; 
+}
+
+.active {
+    border: black solid 2px; 
+    border-radius: 5px; 
 }
 
 #playerOneHand {
@@ -58,8 +70,8 @@
 .card {
     display: flex; 
     justify-content: center; 
-    height: 100px; 
-    width: 75px; 
+    height: 125px; 
+    width: 100px; 
 }
 
 #startGame {

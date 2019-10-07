@@ -99,6 +99,19 @@ function dealHandTwo() {
     }
 }
 
+function makeOneActive() {
+    let active = document.getElementById('playerOne')
+    active.classList.toggle('active')
+}
+
+function makeTwoActive() {
+    let removeActive = document.getElementById('playerOne')
+    removeActive.classList.remove('active')
+    
+    let active = document.getElementById('playerTwo')
+    active.classList.toggle('active')
+}
+
 // Logic for Start Game button 
 document.getElementById("startGame").addEventListener("click", function() {
 
@@ -109,6 +122,7 @@ document.getElementById("startGame").addEventListener("click", function() {
     renderCardsPlayerOne()
     renderCardsPlayerTwo()
     displayScores()
+    makeOneActive()
 })
 
 // Logic for calculating scores. 
@@ -169,6 +183,7 @@ document.getElementById("stay").addEventListener("click", function() {
 
         players[0].isActive = false 
         players[1].isActive = true
+        makeTwoActive()
     }
 
     else if (players[1].isActive === true) {
