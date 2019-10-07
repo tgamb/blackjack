@@ -100,11 +100,13 @@ function dealHandTwo() {
     }
 }
 
+// Makes player one the active player when start game is clicked 
 function makeOneActive() {
     let active = document.getElementById('playerOne')
     active.classList.toggle('active')
 }
 
+// Makes player two the active player when player one clicks stay 
 function makeTwoActive() {
     let removeActive = document.getElementById('playerOne')
     removeActive.classList.remove('active')
@@ -141,6 +143,7 @@ function calculateScores() {
     }
 }
 
+// Renders scores in UI 
 function displayScores() {
     document.getElementById('playerOnePoints').innerHTML = playerOnePoints
     document.getElementById('playerTwoPoints').innerHTML = playerTwoPoints
@@ -199,7 +202,7 @@ document.getElementById("stay").addEventListener("click", function () {
     }
 })
 
-//
+// Logic to determine which player wins. Is used when player 2 clicks stay. 
 function whoWins() {
 
     if (playerOnePoints > playerTwoPoints) {
@@ -217,6 +220,7 @@ function whoWins() {
     }
 }
 
+// Displays player one's hand in the UI 
 function renderCardsPlayerOne() {
 
     for (let i = 0; i < playerOneHand.length; i++) {
@@ -225,6 +229,7 @@ function renderCardsPlayerOne() {
     }
 }
 
+// Displays player two's hadn in the UI     
 function renderCardsPlayerTwo() {
 
     for (let i = 0; i < playerTwoHand.length; i++) {
