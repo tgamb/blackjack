@@ -255,6 +255,10 @@ function dealerLogic () {
                 playerTwoPoints = playerTwoPoints + topCard.pointValue
                 displayScores()
             }
+            
+            if (playerTwoPoints > 21) {
+                document.getElementById("displayWinner").innerHTML = "Player Wins!"
+            }
 
             else whoWins()
         }
