@@ -1,1 +1,1 @@
-This project is a two player game of blackjack to be played by two users. 
+This project is a game of blackjack where the user tries to get a score higher than the dealer, but not above 21. 
