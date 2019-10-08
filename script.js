@@ -160,11 +160,11 @@ document.getElementById("hitMe").addEventListener("click", function () {
             playerOneHand.push(topCard)
             $('#playerOneHand').append(`<img class="card" src="${topCard.img}?sanitize=true" type="image/svg+xml">`)
             playerOnePoints = playerOnePoints + topCard.pointValue
+            displayScores()
 
             if (playerOnePoints > 21) {
-
-                alert("Player 2 Wins!")
-
+                displayScores()
+                document.getElementById("displayWinner").innerHTML = "Player Wins!"
             }
         }
 
@@ -174,13 +174,13 @@ document.getElementById("hitMe").addEventListener("click", function () {
             playerTwoHand.push(topCard)
             $('#playerTwoHand').append(`<img class="card" src="${topCard.img}?sanitize=true" type="image/svg+xml">`)
             playerTwoPoints = playerTwoPoints + topCard.pointValue
+            displayScores()
 
             if (playerTwoPoints > 21) {
-
-                alert("Player 1 Wins!")
+                document.getElementById("displayWinner").innerHTML = "Player Wins!"
             }
         }
-        displayScores()
+        //displayScores()
     }
 })
 
@@ -193,6 +193,7 @@ document.getElementById("stay").addEventListener("click", function () {
             players[0].isActive = false
             players[1].isActive = true
             makeTwoActive()
+            dealerLogic()
         }
 
         else if (players[1].isActive === true) {
@@ -207,16 +208,16 @@ function whoWins() {
 
     if (playerOnePoints > playerTwoPoints) {
 
-        alert("Player 1 Wins!")
+        document.getElementById("displayWinner").innerHTML = "Player Wins!"
     }
 
     else if (playerTwoPoints > playerOnePoints) {
 
-        alert("Player 2 Wins!")
+        document.getElementById("displayWinner").innerHTML = "Dealer Wins!"
     }
 
     else if (playerTwoPoints === playerOnePoints) {
-        alert("It's a tie!")
+        document.getElementById("displayWinner").innerHTML = "It's a tie!"
     }
 }
 
@@ -235,5 +236,27 @@ function renderCardsPlayerTwo() {
     for (let i = 0; i < playerTwoHand.length; i++) {
 
         $('#playerTwoHand').append(`<img class="card" src="${playerTwoHand[i].img}?sanitize=true" type="image/svg+xml">`)
+    }
+}
+
+// Logic to make dealer decisions 
+
+function dealerLogic () {
+
+    if(players[1].isActive=== true) {
+
+        for(let i = 0; i < playerTwoHand.length; i++) {
+
+            if(playerTwoPoints < 17) { 
+
+                drawCards(deck)
+                playerTwoHand.push(topCard)
+                $('#playerTwoHand').append(`<img class="card" src="${topCard.img}?sanitize=true" type="image/svg+xml">`)
+                playerTwoPoints = playerTwoPoints + topCard.pointValue
+                displayScores()
+            }
+
+            else whoWins()
+        }
     }
 }
